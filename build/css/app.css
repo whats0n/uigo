@@ -369,6 +369,10 @@ body.is-hidden {
   height: 100%;
 }
 
+.out {
+  overflow: hidden;
+}
+
 .inner {
   position: relative;
   padding-left: 135px;
@@ -999,6 +1003,7 @@ body.is-hidden {
   top: 4px;
   left: 0;
   max-width: 17px;
+  font-size: 17px;
 }
 
 .contacts__flag img {
@@ -1006,16 +1011,17 @@ body.is-hidden {
   display: block;
 }
 
+.contacts__flag svg {
+  display: block;
+}
+
 .contacts__country {
   font-weight: 700;
+  font-size: 13px;
 }
 
 .contacts__menu {
   padding-top: 8px;
-}
-
-.contacts__menu .nav__list {
-  margin: 0;
 }
 
 .contacts__menu .nav__item {
@@ -1087,6 +1093,10 @@ body.is-hidden {
 
   .sm-info__col {
     padding: 30px 50px;
+  }
+
+  .contacts__menu {
+    display: none;
   }
 }
 
@@ -1175,13 +1185,13 @@ body.is-hidden {
 
   .title-xl {
     font-size: 22px;
-    line-height: 27px;
+    line-height: 1.22728;
     letter-spacing: 0px;
   }
 
   .title-lg {
     font-size: 22px;
-    line-height: 27px;
+    line-height: 1.22728;
     letter-spacing: 0px;
   }
 
@@ -1375,12 +1385,51 @@ body.is-hidden {
     font-size: 12px;
   }
 
+  .contacts {
+    padding: 30px 0 22px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .contacts__out {
+    display: block;
+  }
+
+  .contacts__wrap, .contacts__menu {
+    display: block;
+  }
+
+  .contacts__col:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  .contacts__col {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+    max-width: 170px;
+  }
+
+  .contacts__flag {
+    position: relative;
+    margin-right: 3px;
+    top: 0;
+    display: inline-block;
+  }
+
   .footer {
+    padding: 24px 0 13px;
     text-align: center;
   }
 
   .footer__copy, .footer__logo {
     float: none;
+  }
+
+  .footer__copy {
+    margin-top: 10px;
   }
 
   .footer__logo {
