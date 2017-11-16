@@ -564,6 +564,10 @@ body.is-hidden {
   padding-right: 62px;
 }
 
+.nav__item.is-active {
+  font-weight: 700;
+}
+
 .nav__link {
   display: inline-block;
   vertical-align: top;
