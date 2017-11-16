@@ -8,7 +8,7 @@
 		bottom: 0
 		overflow: hidden
 		background: rgba($dark, 0.85)
-		+sm
+		+md
 			position: relative
 			background: $white
 	&__inner
@@ -20,10 +20,13 @@
 		height: 234px
 		+vertical
 		cursor: pointer
+		+md
+			width: 50%
+			height: 130px
+			background: rgba($dark, 0.85)
 		+sm 
 			width: 50%
 			height: 91px
-			background: rgba($dark, 0.85)
 		+hover
 			&:after
 				opacity: 1
@@ -46,7 +49,7 @@
 			background: rgba($dark, 0.54)
 			box-shadow: 0 15px 53px 0 rgba(0, 0, 0, 0.48)
 			transition: opacity 0.3s ease
-			+sm 
+			+md
 				display: none
 	&__content
 		position: relative
@@ -58,6 +61,8 @@
 		margin-bottom: 15px
 		height: 60px
 		+vertical
+		+md 
+			margin-bottom: 10px
 		+sm 
 			margin-bottom: 0
 			height: 39px
@@ -66,18 +71,26 @@
 			vertical-align: middle
 	&__design
 		width: 56px
+		+md
+			width: 56/1.5+px
 		+sm
 			width: 28px
 	&__development
 		width: 71px
+		+md
+			width: 71/1.5+px
 		+sm
 			width: 34px
 	&__acquisition
 		width: 52px
+		+md
+			width: 52/1.5+px
 		+sm
 			width: 26px
 	&__retention
 		width: 58px
+		+md
+			width: 58/1.5+px
 		+sm
 			width: 29px
 	&__title
@@ -88,5 +101,5 @@
 		opacity: 0
 		visibility: hidden
 		transition: height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease
-		+sm 
+		+md
 			display: none

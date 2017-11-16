@@ -4,25 +4,59 @@
 	&__inner
 		padding-top: 90px
 		padding-bottom: 89px
+		+sm 
+			padding-top: 25px
+			padding-bottom: 25px
 	&__row
 		margin: 0 -115px
 		+clr
+		+lg
+			margin: 0 -50px
+		+md 
+			margin: 0 -30px
+		+sm 
+			margin: 0
 	&__col
 		float: left
 		padding: 30px 115px
 		width: 50%
+		+lg 
+			padding: 30px 50px
+		+md 
+			padding: 30px
+		+sm 
+			padding: 15px 0
+			width: 100%
 	&__header
 		margin-bottom: 30px
 		+clr
+		+sm 
+			margin-bottom: 20px
 	&__icon
 		float: left
+		+sm 
+			float: none
+			padding-bottom: 20px
 		&_home-agency
 			padding-right: 21px
 			margin-left: -12px
+			+sm 
+				padding-right: 0
+				margin: 0
 		&_home-outsourcing
 			padding-right: 27px
+			+sm 
+				padding-right: 0
 		.icon
 			font-size: 70px
+			+sm 
+				font-size: 35px
 	&__title
 		overflow: hidden
 		max-width: 300px
+		+sm 
+		max-width: 160px
+	&__description
+		br
+			+sm
+				display: none
