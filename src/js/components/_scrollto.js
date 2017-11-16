@@ -13,7 +13,7 @@ import { SCROLL_TO } from '../_utils';
     const to = $target.data('goto');
     const $currentSection = $section.filter(`[data-section="${to}"]`);
     
-    $currentSection.length && SCROLL_TO(currentSection.offset().top);
+    $currentSection.length && SCROLL_TO($currentSection.offset().top);
 
   });
 
