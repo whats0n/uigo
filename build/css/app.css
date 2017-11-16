@@ -974,14 +974,11 @@ body.is-hidden {
 
 .contacts__country {
   font-weight: 700;
+  font-size: 13px;
 }
 
 .contacts__menu {
   padding-top: 8px;
-}
-
-.contacts__menu .nav__list {
-  margin: 0;
 }
 
 .contacts__menu .nav__item {
@@ -1050,6 +1047,10 @@ body.is-hidden {
   .hero__inner {
     padding-top: 150px;
     padding-bottom: 300px;
+  }
+
+  .contacts__menu {
+    display: none;
   }
 }
 
@@ -1185,12 +1186,51 @@ body.is-hidden {
     display: none;
   }
 
+  .contacts {
+    padding: 30px 0 22px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .contacts__out {
+    display: block;
+  }
+
+  .contacts__wrap, .contacts__menu {
+    display: block;
+  }
+
+  .contacts__col:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  .contacts__col {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+    max-width: 170px;
+  }
+
+  .contacts__flag {
+    position: relative;
+    margin-right: 3px;
+    top: 0;
+    display: inline-block;
+  }
+
   .footer {
+    padding: 24px 0 13px;
     text-align: center;
   }
 
   .footer__copy, .footer__logo {
     float: none;
+  }
+
+  .footer__copy {
+    margin-top: 10px;
   }
 
   .footer__logo {
