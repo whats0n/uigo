@@ -1,8 +1,10 @@
-import { WIN, FIXED } from '../_constants';
+import { WIN, BODY, FIXED, ACTIVE } from '../_constants';
 
 ;(() => {
 
   const $header = $('.js-header');
+
+  //START HEADER ON SCROLL
   const duration = 200;
   let shown = false;
   let hidden = false;
@@ -61,5 +63,16 @@ import { WIN, FIXED } from '../_constants';
 
   toggleHeader();
   WIN.on('scroll', toggleHeader);
+  //END HEADER ON SCROLL
+
+  //START SHOW NAV
+  const $navBtn = $('.js-nav-btn');
+  const HIDDEN = 'is-hidden';
+  $navBtn.on('click', e => {
+    e.preventDefault();
+    $header.toggleClass(ACTIVE);
+    BODY.toggleClass(HIDDEN);
+  });
+  //END SHOW NAV
 
 })();

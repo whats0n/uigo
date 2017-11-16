@@ -7,58 +7,151 @@
 	color: $white
 	&.is-fixed
 		position: fixed
+		box-shadow: inset 0 -1px 0 0 rgba(204, 204, 204, 0.5)
+	&.is-fixed,
+	&.is-active
 		color: $dark
 		background: $white
-		box-shadow: inset 0 -1px 0 0 rgba(204, 204, 204, 0.5)
-		.nav
+		.header
 			&__btn
 				color: $dark
 				background: $green
 				box-shadow: none
-	&.is-back
-		animation: show 0.3s ease-in-out forwards reverse
+			&__btn-nav
+				span
+					&:before,
+					&:after,
+					i
+						border-color: $dark
+	&.is-active
+		.header
+			&__btn-nav
+				span
+					&:before
+						transform: translate3d(4px, -1px, 0) rotate(45deg)
+					&:after
+						transform: translate3d(4px, 1px, 0) rotate(-45deg)
+					i
+						opacity: 0
+						transform: scale(0.5)
+		.nav
+			+gpu
 	&__inner
 		padding-top: 30px
 		padding-bottom: 30px
+		+sm
+			padding-top: 12px
+			padding-bottom: 12px
+	&__btn
+		position: relative
+		z-index: 2
+		float: right
+		padding: 10px 27px
+		border: 1px solid $green
+		border-radius: 29px
+
+		color: $green
+		background: none
+		box-shadow: 0 8px 27px 0 rgba(0, 0, 0, 0.26)
+
+		font-family: $montserrat
+		+f(13, 16px, 0.5)
+		text-transform: uppercase
+		transition: color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease
+		+sm
+			padding: 11px 14px 10px
+			+f(10, 13px, 0.4)
+		+hover
+			color: $dark
+			background: $green
+	&__btn-nav
+		position: relative
+		z-index: 2
+		float: left
+		margin-left: -15px
+		width: 51px
+		height: 36px
+		background: none
+		span
+			position: absolute
+			top: 11px
+			left: 15px
+			right: 15px
+			bottom: 11px
+			&:before,
+			&:after,
+			i
+				position: absolute
+				left: 0
+				border-top: 2px solid $white
+				width: 100%
+			&:before,
+			&:after
+				content: ''
+				transition: transform 0.2s ease-in-out
+			&:before
+				top: 0
+				transform-origin: left top
+			&:after
+				bottom: 0
+				transform-origin: left bottom
+			i
+				top: 50%
+				margin-top: -1px
+				transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out
 
 .logo
+	position: relative
+	z-index: 2
 	float: left
 	padding: 5px 0
 	color: inherit
 	font-size: 0
+	+sm
+		padding: 8px 0
 	.icon
 		color: inherit
 		fill: $green
 		font-size: 28px
+		+sm
+			font-size: 20px
 
 .nav
 	float: right
+	+sm
+		position: fixed
+		z-index: 1
+		top: 0
+		left: 0
+		padding: 60px 20px
+		width: 100vw
+		height: 100vh
+		background: $white
+		transform: translate3d(-100%,0,0)
+		transition: transform 0.4s ease-in-out
 	&__item
 		display: inline-block
 		vertical-align: middle
-		&.is-active
-			font-weight: 700 
-		&:not(:first-child)
-			margin-left: 62px
-	&__link,
-	&__btn
+		padding-right: 62px
+		+md
+			padding-right: 40px
+		+sm
+			display: block
+			padding: 0
+	&__link
 		display: inline-block
 		vertical-align: top
+		padding: 11px 0
+
+		color: inherit
+		opacity: 0.9
+
 		font-family: $montserrat
 		+f(13, 16px, 0.5)
 		text-transform: uppercase
-	&__link
-		padding: 11px 0
-		color: inherit
-		opacity: 0.9
-	&__btn
-		padding: 10px 27px
-		border: 1px solid $green
-		border-radius: 29px
-		color: $green
-		background: none
-		box-shadow: 0 8px 27px 0 rgba(0, 0, 0, 0.26)
-		transition: color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease
-		+hover
+		+sm
+			display: block
+			padding: 24px 0 23px
+			border-bottom: 1px solid rgba(204, 204, 204, 0.5)
 			color: $dark
-			background: $green
+			+f(10, 13px, 0.4)

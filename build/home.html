@@ -15,17 +15,20 @@
     <div class="out">
       <!-- begin header -->
       <header class="header js-header">
-        <div class="inner header__inner"> <a href="#" class="logo">
+        <div class="inner header__inner"> <button class="header__btn-nav js-nav-btn">
+			<span>
+				<i></i>
+			</span>
+		</button> <a href="#" class="logo">
 			
 <svg class="icon icon-logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
 
-		</a>
+		</a> <button class="header__btn" data-goto="contact-us">Contact Us</button>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item"> <a href="#" class="nav__link">Work</a> </li>
               <li class="nav__item"> <a href="#" class="nav__link">About Us</a> </li>
               <li class="nav__item"> <a href="#" class="nav__link">Services</a> </li>
-              <li class="nav__item"> <button class="nav__btn" data-goto="contact-us">Contact Us</button> </li>
             </ul>
           </nav>
         </div>
@@ -37,58 +40,58 @@
           <div class="hero__content">
             <h1 class="title-xl hero__title">Turn your idea <strong>into an App</strong></h1> <button class="btn" data-goto="services">Learn More</button> </div>
         </div>
-        <!-- begin sm-services -->
-        <div class="sm-services hero__sm-services" data-section="services">
-          <div class="inner sm-services__inner">
-            <div class="sm-services__item">
-              <div class="sm-services__content">
-                <div class="sm-services__icon"> <img src="img/icn-features-design@2x.png" alt="DESIGN" class="sm-services__design"> </div>
-                <div class="title-sm sm-services__title">DESIGN</div>
-                <div class="description sm-services__description">
-                  <p>Native Android development</p>
-                  <p>Native iOS development</p>
-                  <p>Mobile app QA</p>
-                </div>
+      </div>
+      <!-- end hero -->
+      <!-- begin sm-services -->
+      <div class="sm-services" data-section="services">
+        <div class="inner sm-services__inner">
+          <div class="sm-services__item">
+            <div class="sm-services__content">
+              <div class="sm-services__icon"> <img src="img/icn-features-design@2x.png" alt="DESIGN" class="sm-services__design"> </div>
+              <div class="title-sm sm-services__title">DESIGN</div>
+              <div class="description sm-services__description">
+                <p>Native Android development</p>
+                <p>Native iOS development</p>
+                <p>Mobile app QA</p>
               </div>
             </div>
-            <div class="sm-services__item">
-              <div class="sm-services__content">
-                <div class="sm-services__icon"> <img src="img/icn-features-development@2x.png" alt="DEVELOPMENT" class="sm-services__development"> </div>
-                <div class="title-sm sm-services__title">DEVELOPMENT</div>
-                <div class="description sm-services__description">
-                  <p>Native Android development</p>
-                  <p>Native iOS development</p>
-                  <p>Mobile app QA</p>
-                </div>
+          </div>
+          <div class="sm-services__item">
+            <div class="sm-services__content">
+              <div class="sm-services__icon"> <img src="img/icn-features-development@2x.png" alt="DEVELOPMENT" class="sm-services__development"> </div>
+              <div class="title-sm sm-services__title">DEVELOPMENT</div>
+              <div class="description sm-services__description">
+                <p>Native Android development</p>
+                <p>Native iOS development</p>
+                <p>Mobile app QA</p>
               </div>
             </div>
-            <div class="sm-services__item">
-              <div class="sm-services__content">
-                <div class="sm-services__icon"> <img src="img/icn-features-acquisition@2x.png" alt="ACQUISITION" class="sm-services__acquisition"> </div>
-                <div class="title-sm sm-services__title">ACQUISITION</div>
-                <div class="description sm-services__description">
-                  <p>Native Android development</p>
-                  <p>Native iOS development</p>
-                  <p>Mobile app QA</p>
-                </div>
+          </div>
+          <div class="sm-services__item">
+            <div class="sm-services__content">
+              <div class="sm-services__icon"> <img src="img/icn-features-acquisition@2x.png" alt="ACQUISITION" class="sm-services__acquisition"> </div>
+              <div class="title-sm sm-services__title">ACQUISITION</div>
+              <div class="description sm-services__description">
+                <p>Native Android development</p>
+                <p>Native iOS development</p>
+                <p>Mobile app QA</p>
               </div>
             </div>
-            <div class="sm-services__item">
-              <div class="sm-services__content">
-                <div class="sm-services__icon"> <img src="img/icn-features-retention@2x.png" alt="RETENTION" class="sm-services__retention"> </div>
-                <div class="title-sm sm-services__title">RETENTION</div>
-                <div class="description sm-services__description">
-                  <p>Native Android development</p>
-                  <p>Native iOS development</p>
-                  <p>Mobile app QA</p>
-                </div>
+          </div>
+          <div class="sm-services__item">
+            <div class="sm-services__content">
+              <div class="sm-services__icon"> <img src="img/icn-features-retention@2x.png" alt="RETENTION" class="sm-services__retention"> </div>
+              <div class="title-sm sm-services__title">RETENTION</div>
+              <div class="description sm-services__description">
+                <p>Native Android development</p>
+                <p>Native iOS development</p>
+                <p>Mobile app QA</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- end sm-services -->
       </div>
-      <!-- end hero -->
+      <!-- end sm-services -->
       <!-- begin sm-product -->
       <div class="sm-product">
         <div class="inner sm-product__inner">
@@ -137,6 +140,13 @@
             </div>
             <div class="contact-us__col contact-us__form">
               <form action="/" class="form">
+                <div class="form__row">
+                  <div class="form__col form__col_md"> <input type="text" class="input" placeholder="Name"> </div>
+                  <div class="form__col form__col_md"> <input type="text" class="input" placeholder="Email"> </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col "> <input type="text" class="input" placeholder="Message"> </div>
+                </div>
                 <div class="form__footer"> <button class="form__submit">Send
 <svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
 </button> </div>

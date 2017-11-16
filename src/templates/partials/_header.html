@@ -1,9 +1,15 @@
 <!-- begin header -->
 <header class="header js-header">
 	<div class="inner header__inner">
+		<button class="header__btn-nav js-nav-btn">
+			<span>
+				<i></i>
+			</span>
+		</button>
 		<a href="#" class="logo">
 			{{mixins.icon('logo')}}
 		</a>
+		<button class="header__btn" data-goto="contact-us">Contact Us</button>
 		<nav class="nav">
 			<ul class="nav__list">
 				<li class="nav__item">
@@ -14,9 +20,6 @@
 				</li>
 				<li class="nav__item">
 					<a href="#" class="nav__link">Services</a>
-				</li>
-				<li class="nav__item">
-					<button class="nav__btn" data-goto="contact-us">Contact Us</button>
 				</li>
 			</ul>
 		</nav>
