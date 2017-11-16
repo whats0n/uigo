@@ -1,0 +1,64 @@
+.sm-services
+	color: $white
+	background: rgba($dark, 0.85)
+	&__inner
+		padding: 0
+	&__item
+		position: relative
+		float: left
+		width: 25%
+		height: 234px
+		+vertical
+		cursor: pointer
+		+hover
+			&:after
+				opacity: 1
+			.sm-services
+				&__title
+					font-weight: 500
+				&__description
+					position: relative
+					height: 3.75em
+					opacity: 0.9
+					visibility: visible
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			opacity: 0
+			background: rgba($dark, 0.54)
+			box-shadow: 0 15px 53px 0 rgba(0, 0, 0, 0.48)
+			transition: opacity 0.3s ease
+	&__content
+		position: relative
+		z-index: 1
+		display: inline-block
+		vertical-align: middle
+		width: 100%
+	&__icon
+		margin-bottom: 15px
+		height: 60px
+		+vertical
+		img
+			display: inline-block
+			vertical-align: middle
+	&__design
+		width: 56px
+	&__development
+		width: 71px
+	&__acquisition
+		width: 52px
+	&__retention
+		width: 58px
+	&__title
+		margin-bottom: 15px
+		transition: font-weight 0.3s ease
+	&__description
+		height: 0
+		opacity: 0
+		visibility: hidden
+		+f(14, 1.45, null, 100)
+		transition: height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease

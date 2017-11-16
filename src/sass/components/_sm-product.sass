@@ -1,0 +1,30 @@
+.sm-product
+	&__img
+		position: absolute
+		top: -60px
+		right: 0
+		width: 846px
+		font-size: 0
+		pointer-events: none
+		img
+			width: 100%
+	&__content
+		padding: 63px 0 62px
+		max-width: 460px
+	&__title
+		position: relative
+		padding-left: 36px
+		margin-bottom: 30px
+		&:before
+			content: ''
+			position: absolute
+			top: 5px
+			left: 0
+			bottom: 5px
+			border-left: 11px solid $green
+	&__description
+		color: $dark
+		opacity: 0.9
+		+f(13, 19px)
+		p + p
+			margin-top: 19px

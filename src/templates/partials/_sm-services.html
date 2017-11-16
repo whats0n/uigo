@@ -1,0 +1,59 @@
+{% set services = [
+	{
+		icon: 'icn-features-design@2x.png',
+		title: 'DESIGN',
+		description: [
+			'Native Android development',
+			'Native iOS development',
+			'Mobile app QA'
+		]
+	},
+	{
+		icon: 'icn-features-development@2x.png',
+		title: 'DEVELOPMENT',
+		description: [
+			'Native Android development',
+			'Native iOS development',
+			'Mobile app QA'
+		]
+	},
+	{
+		icon: 'icn-features-acquisition@2x.png',
+		title: 'ACQUISITION',
+		description: [
+			'Native Android development',
+			'Native iOS development',
+			'Mobile app QA'
+		]
+	},
+	{
+		icon: 'icn-features-retention@2x.png',
+		title: 'RETENTION',
+		description: [
+			'Native Android development',
+			'Native iOS development',
+			'Mobile app QA'
+		]
+	}
+] %}
+<!-- begin sm-services -->
+<div class="sm-services {{smServicesClassList}}">
+	<div class="inner sm-services__inner">
+		{% for item in services %}
+			<div class="sm-services__item">
+				<div class="sm-services__content">
+					<div class="sm-services__icon">
+						<img src="img/{{item.icon}}" alt="{{item.title}}" class="sm-services__{{item.title | lower}}">
+					</div>
+					<div class="title-sm sm-services__title">{{item.title}}</div>
+					<div class="sm-services__description">
+						{% for item in item.description %}
+							<p>{{item}}</p>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+<!-- end sm-services -->
