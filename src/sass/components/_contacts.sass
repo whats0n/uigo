@@ -1,0 +1,43 @@
+.contacts
+	padding: 93px 0 89px
+	line-height: 1.46
+	font-size: 13px
+	border-top: solid 1px rgba(#979797, .5)
+	background-color: $athensGray 
+	&__out
+		width: 100%
+		display: table
+	&__wrap
+		+clr
+	&__wrap,
+	&__menu
+		vertical-align: top
+		display: table-cell
+	&__col
+		position: relative
+		float: left
+		padding: 0 15px 0 23px
+		width: 50%
+	&__flag
+		position: absolute
+		top: 4px
+		left: 0
+		max-width: 17px
+		img
+			max-width: 100%
+			display: block
+	&__country
+		font-weight: 700
+	&__menu
+		padding-top: 8px
+		.nav__item
+			&:not(:first-child)
+				margin-left: 32px
+	&__phone
+		margin-top: 2px
+		color: $dark 
+		transition: border-color .3s ease-in-out
+		border-bottom: 1px solid transparent
+		display: inline-block
+		+hover
+			border-bottom-color: currentColor 

@@ -33,12 +33,13 @@
 
 .nav
 	float: right
-	&__list
-		margin-right: -31px
 	&__item
 		display: inline-block
 		vertical-align: middle
-		padding: 0 31px
+		&.is-active
+			font-weight: 700 
+		&:not(:first-child)
+			margin-left: 62px
 	&__link,
 	&__btn
 		display: inline-block
