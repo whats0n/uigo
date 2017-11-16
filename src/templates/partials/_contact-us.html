@@ -1,0 +1,30 @@
+<!-- begin contact-us -->
+<div class="contact-us">
+	<div class="inner contact-us__inner">
+		<div class="contact-us__row">
+			<div class="contact-us__col contact-us__content">
+				<h2 class="title-lg awesome-title contact-us__title">Users will <strong>love your app!</strong></h2>
+				<div class="description contact-us__description">
+					<p>Drop us a line and we´ll get back to you asap</p>
+				</div>
+			</div>
+			<div class="contact-us__col contact-us__form">
+				<form action="/" class="form">
+					{% for item in contactUsForm %}
+						<div class="form__row">
+							{% for item in item %}
+								<div class="form__col {{item.classList}}">
+									<input type="text" class="input" placeholder="{{item.placeholder}}">
+								</div>
+							{% endfor %}
+						</div>
+					{% endfor %}
+					<div class="form__footer">
+						<button class="form__submit">Send{{mixins.icon('arrow-right')}}</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end contact-us -->
