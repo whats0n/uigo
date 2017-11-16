@@ -9,3 +9,20 @@
 .title-sm
 	font-family: $montserrat
 	+f(16, 1.25, 2.4, 400)
+
+.awesome-title
+	position: relative
+	padding-left: 36px
+	&:before
+		content: ''
+		position: absolute
+		top: 5px
+		left: 0
+		bottom: 5px
+		border-left: 11px solid $green
+	strong
+		display: block
+
+.description
+	opacity: 0.9
+	+f(15, 1.27)
