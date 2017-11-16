@@ -2,8 +2,12 @@
 	overflow: hidden
 	color: $white
 	background: rgba($dark, 0.85)
+	transform: translate3d(0,-100%,0)
+	+sm 
+		background: $white
+		+gpu
 	&__inner
-		padding: 0
+		padding: 0 !important
 	&__item
 		position: relative
 		float: left
@@ -11,6 +15,10 @@
 		height: 234px
 		+vertical
 		cursor: pointer
+		+sm 
+			width: 50%
+			height: 91px
+			background: rgba($dark, 0.85)
 		+hover
 			&:after
 				opacity: 1
@@ -33,6 +41,8 @@
 			background: rgba($dark, 0.54)
 			box-shadow: 0 15px 53px 0 rgba(0, 0, 0, 0.48)
 			transition: opacity 0.3s ease
+			+sm 
+				display: none
 	&__content
 		position: relative
 		z-index: 1
@@ -43,17 +53,28 @@
 		margin-bottom: 15px
 		height: 60px
 		+vertical
+		+sm 
+			margin-bottom: 0
+			height: 39px
 		img
 			display: inline-block
 			vertical-align: middle
 	&__design
 		width: 56px
+		+sm
+			width: 28px
 	&__development
 		width: 71px
+		+sm
+			width: 34px
 	&__acquisition
 		width: 52px
+		+sm
+			width: 26px
 	&__retention
 		width: 58px
+		+sm
+			width: 29px
 	&__title
 		margin-bottom: 15px
 		transition: font-weight 0.3s ease
@@ -62,3 +83,5 @@
 		opacity: 0
 		visibility: hidden
 		transition: height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease
+		+sm 
+			display: none
