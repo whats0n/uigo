@@ -1,0 +1,31 @@
+{% set smInfo = [
+	{
+		icon: 'home-outsourcing',
+		title: 'Nearshore <strong>outsourcing</strong>',
+		description: 'We combine the talent of our highly skilled engineering staff with our top-level marketing team, working from South America and the US, fully committed to helping companies build great apps, fast and reliably.'
+	},
+	{
+		icon: 'home-agency',
+		title: 'App design <strong>agency</strong>',
+		description: 'We can help you design, develop, promote and retain users for your app. <br>We know about usability, branding, and user acquisition. Get in touch with us to design your app marketing strategy.'
+	}
+] %}
+<!-- begin sm-info -->
+<div class="sm-info">
+	<div class="inner sm-info__inner">
+		<div class="sm-info__row">
+			{% for item in smInfo %}
+				<div class="sm-info__col">
+					<div class="sm-info__header">
+						<div class="sm-info__icon sm-info__icon_{{item.icon}}">
+							{{mixins.icon(item.icon)}}
+						</div>
+						<h2 class="title-lg sm-info__title">{{item.title | safe}}</h2>
+					</div>
+					<div class="sm-info__description">{{item.description | safe}}</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- end sm-info -->
