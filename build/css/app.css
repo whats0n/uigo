@@ -734,6 +734,27 @@ body {
   line-height: 19px;
 }
 
+.footer {
+  padding: 20px 0;
+  color: #fff;
+  background-color: #20262c;
+}
+
+.footer__copy {
+  float: left;
+}
+
+.footer__logo {
+  float: right;
+}
+
+.copy {
+  opacity: 0.6;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.73;
+}
+
 @media (prefers-reduced-motion: reduce) {
 
   * {
