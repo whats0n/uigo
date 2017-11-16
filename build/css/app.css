@@ -615,10 +615,17 @@ body.is-hidden {
 }
 
 .sm-services {
-  overflow: hidden;
+  position: relative;
   color: #fff;
+}
+
+.sm-services__container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
   background: rgba(32, 38, 44, 0.85);
-  transform: translate3d(0, -100%, 0);
 }
 
 .sm-services__inner {
@@ -1064,9 +1071,9 @@ body.is-hidden {
     letter-spacing: 0.4px;
   }
 
-  .sm-services {
+  .sm-services__container {
+    position: relative;
     background: #fff;
-    transform: translate3d(0, 0, 0);
   }
 
   .sm-services__item {
