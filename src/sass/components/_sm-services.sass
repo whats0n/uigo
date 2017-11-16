@@ -1,11 +1,16 @@
 .sm-services
-	overflow: hidden
+	position: relative
 	color: $white
-	background: rgba($dark, 0.85)
-	transform: translate3d(0,-100%,0)
-	+sm 
-		background: $white
-		+gpu
+	&__container
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		overflow: hidden
+		background: rgba($dark, 0.85)
+		+sm
+			position: relative
+			background: $white
 	&__inner
 		padding: 0 !important
 	&__item
