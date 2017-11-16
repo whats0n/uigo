@@ -345,6 +345,10 @@ body.is-hidden {
   height: 100%;
 }
 
+.out {
+  overflow: hidden;
+}
+
 .inner {
   position: relative;
   padding-left: 135px;
