@@ -2,6 +2,9 @@
 	&__inner
 		padding-top: 89px
 		padding-bottom: 104px
+		+sm
+			padding-top: 25px 
+			padding-bottom: 50px
 	&__row
 		margin: 0 -15px
 		+clr
@@ -9,6 +12,10 @@
 		float: left
 		padding: 0 15px
 		width: 50%
+		&:not(:first-child)
+			margin-top: 27px
+		+sm
+			width: 100%
 	&__content
 		padding-top: 15px
 	&__title

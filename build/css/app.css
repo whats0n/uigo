@@ -847,6 +847,10 @@ body.is-hidden {
   width: 50%;
 }
 
+.contact-us__col:not(:first-child) {
+  margin-top: 27px;
+}
+
 .contact-us__content {
   padding-top: 15px;
 }
@@ -972,10 +976,15 @@ body.is-hidden {
   top: 4px;
   left: 0;
   max-width: 17px;
+  font-size: 17px;
 }
 
 .contacts__flag img {
   max-width: 100%;
+  display: block;
+}
+
+.contacts__flag svg {
   display: block;
 }
 
@@ -1079,10 +1088,29 @@ body.is-hidden {
     font-size: 22px;
   }
 
+  .title-lg {
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 0.002em;
+  }
+
   .title-sm {
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 1.8px;
+  }
+
+  .awesome-title {
+    padding-left: 20px;
+  }
+
+  .awesome-title:before {
+    top: 0;
+    bottom: 0;
+  }
+
+  .description {
+    font-size: 12px;
   }
 
   .header__inner {
@@ -1191,6 +1219,23 @@ body.is-hidden {
 
   .sm-services__description {
     display: none;
+  }
+
+  .contact-us__inner {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  .contact-us__col {
+    width: 100%;
+  }
+
+  .form__col_md {
+    width: 100%;
+  }
+
+  .form__submit {
+    height: 24px;
   }
 
   .contacts {
