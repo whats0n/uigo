@@ -31,7 +31,10 @@
 						<div class="form__row">
 							{% for item in item %}
 								<div class="form__col {{item.classList}}">
-									<input type="text" class="input" placeholder="{{item.placeholder}}">
+									<label class="field js-field">
+										<span class="field__label">{{item.placeholder}}</span>
+										<input type="text" class="input js-field-input">
+									</label>
 								</div>
 							{% endfor %}
 						</div>

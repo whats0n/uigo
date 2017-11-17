@@ -36,7 +36,7 @@
 					font-weight: 500
 				&__description
 					position: relative
-					height: 3.75em
+					max-height: 5em
 					opacity: 0.9
 					visibility: visible
 		&:after
@@ -98,9 +98,9 @@
 		margin-bottom: 15px
 		transition: font-weight 0.3s ease
 	&__description
-		height: 0
+		max-height: 0
 		opacity: 0
 		visibility: hidden
-		transition: height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease
+		transition: max-height 0.4s ease, opacity 0.3s ease, visibility 0.3s ease
 		+md
 			display: none

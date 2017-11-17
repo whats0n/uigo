@@ -54,12 +54,12 @@
 
 		color: $green
 		background: none
-		box-shadow: 0 8px 27px 0 rgba(0, 0, 0, 0.26)
+		// box-shadow: 0 8px 27px 0 rgba(0, 0, 0, 0.26)
 
 		font-family: $montserrat
 		+f(13, 16px, 0.5)
 		text-transform: uppercase
-		transition: color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease
+		// transition: color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease
 		+sm
 			padding: 11px 14px 10px
 			+f(10, 13px, 0.4)
@@ -161,7 +161,7 @@
 		+sm
 			display: block
 			padding: 24px 0 23px
-			border-bottom: 1px solid rgba(204, 204, 204, 0.5)
+			// border-bottom: 1px solid rgba(204, 204, 204, 0.5)
 			color: $dark
 			+f(10, 13px, 0.4)
 		&.is-active
@@ -182,3 +182,5 @@
 			opacity: 0
 			transform: translate3d(0,5px,0)
 			transition: opacity 0.17s ease-in-out, transform 0.17s ease-in-out
+			+sm 
+				bottom: 0
