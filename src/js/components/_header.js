@@ -110,4 +110,10 @@ import { SCROLL_WIDTH } from './_scrollWidth';
   });
   //END SHOW NAV
 
+  const $contactUs = $('.js-contact-us');
+  $contactUs.on('click', e => {
+    e.preventDefault();
+    if ($header.hasClass(ACTIVE)) $navBtn.trigger('click');
+  });
+
 })();

@@ -1712,6 +1712,7 @@ body.is-hidden:before {
   .nav__link {
     display: block;
     padding: 24px 0 23px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
     color: #20262c;
     font-size: 10px;
     line-height: 13px;
@@ -1719,7 +1720,7 @@ body.is-hidden:before {
   }
 
   .nav__link:before {
-    bottom: 0;
+    bottom: -1px;
   }
 
   .hero__inner {
