@@ -1,0 +1,34 @@
+---
+title: Index page
+aboutActive: 'is-active'
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include 'partials/_header.html' %}
+
+	{% set topicTitle = 'Who we are' %}
+	{% include 'partials/work/_topic.html' %}
+
+	{% set product = {
+		title: 'We are a mobile app <strong>development company</strong>',
+		content: '<p>ThinkUp was co-founded in 2016 by a group of passionate people with the vision to design and develop revolutionary and innovative mobile apps.</p>
+			<p>We combine the talents of our highly skilled engineering staff with our experienced marketing team. Our highly experienced team working from South America and the US is fully committed to helping companies build great apps, fast and reliably.</p>',
+		frame: 'img/product-about-company@2x.jpg'
+	} %}
+	{% include 'partials/_sm-product.html' %}
+
+	{% set info = {
+		title: 'We create world class iOS & Android apps for <strong>startups & enterprise clients</strong>',
+		content: '<p>We can help you design, develop, promote and retain users for your app.  We know about usability, branding, and user acquisition. 
+			<br>​Get in touch with us to design your app marketing strategy.</p>
+			<p>Our dedicated team has developed mobile solutions for  e-commerce, smart city, medical, and social networking applications.</p>'
+	} %}
+	{% include 'partials/_info.html' %}
+
+	{% include 'partials/_contact-us.html' %}
+	{% include 'partials/_contacts.html' %}
+	{% include 'partials/_footer.html' %}
+
+{% endblock %}

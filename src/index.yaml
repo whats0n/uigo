@@ -3,3 +3,5 @@ ProjectTitle: uigo
 PageList:
 - file: home.html
 - file: work.html
+- file: about.html
+- file: services.html

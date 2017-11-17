@@ -1,0 +1,37 @@
+---
+title: Index page
+servicesActive: 'is-active'
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include 'partials/_header.html' %}
+
+	{% set topicTitle = 'Who we are' %}
+	{% include 'partials/work/_topic.html' %}
+
+	{% set product = {
+		title: 'Mobile app Design & Development',
+		content: '<p>Thinkup relies on highly specialized mobile-experts for the development of native applications.</p>
+			<p>We can support you throughout all phases of your app development, with services ranging from creation of complex app concepts, through mobile web design, to performance optimization with fully automated and manual testing procedures.</p>',
+		img: 'img/product-services-mobile-1@2x.png',
+		imgClassList: 'sm-product__services',
+		alt: 'Services'
+	} %}
+	{% include 'partials/_sm-product.html' %}
+
+	{% set info = {
+		title: 'We are native mobile development experts',
+		content: '<p>We offer end-to-end solutions to create a unique mobile experience across multiple platforms, devices and OS versions, with continued support and maintenance to respond to your short-term and long-term needs.</p>
+		<p>We have a highly experienced Quality Assurance team dedicated to bringing the best quality products to market.</p>'
+	} %}
+	{% include 'partials/_info.html' %}
+
+	{% include 'partials/_lists.html' %}
+
+	{% include 'partials/_contact-us.html' %}
+	{% include 'partials/_contacts.html' %}
+	{% include 'partials/_footer.html' %}
+
+{% endblock %}

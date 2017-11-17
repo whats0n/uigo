@@ -1,0 +1,33 @@
+{% set list = [
+	'',
+	'',
+	'',
+	'',
+	'',
+	'',
+	'',
+	'',
+	'',
+	'',
+	'',
+	'',
+	'',
+	'',
+	''
+] %}
+<!-- begin lists -->
+<div class="lists">
+	<div class="inner lists__inner">
+		<h2 class="title-lg lists__title">Industries we serve</h2>
+		<div class="lists__content">
+			<ul class="list">
+				{% for item in list %}
+					<li class="list__item">
+						<a href="#" class="list__link">{{item | safe}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end lists -->
