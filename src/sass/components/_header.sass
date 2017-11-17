@@ -10,6 +10,15 @@
 		.header
 			&__inner
 				background-color: $white
+				&:before
+					position: absolute
+					content: ""
+					top: 0
+					left: 50%
+					bottom: 0
+					transform: translateX(-50%)
+					width: 100vw 
+					background-color: $white
 	&.is-fixed,
 	&.is-active
 		color: $dark

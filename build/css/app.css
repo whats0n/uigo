@@ -461,6 +461,18 @@ body.is-hidden:before {
   background-color: #fff;
 }
 
+.header.is-fixed .header__inner:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100vw;
+  background-color: #fff;
+}
+
 .header.is-fixed, .header.is-active {
   color: #20262c;
 }
