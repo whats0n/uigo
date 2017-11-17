@@ -466,6 +466,10 @@ body.is-hidden {
   box-shadow: none;
 }
 
+.no-touch .header.is-fixed .header__btn:hover, .no-touch .header.is-active .header__btn:hover {
+  background: #00f1c7;
+}
+
 .header.is-fixed .header__btn-nav span:before, .header.is-fixed .header__btn-nav span:after,
 .header.is-fixed .header__btn-nav span i, .header.is-active .header__btn-nav span:before, .header.is-active .header__btn-nav span:after,
 .header.is-active .header__btn-nav span i {
@@ -598,6 +602,7 @@ body.is-hidden {
 }
 
 .nav__link {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   padding: 11px 0;
@@ -608,6 +613,29 @@ body.is-hidden {
   line-height: 16px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  transition: color 0.25s ease-in-out;
+}
+
+.nav__link.is-active:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.no-touch .nav__link:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.nav__link:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  border-top: 2px solid #3effde;
+  opacity: 0;
+  transform: translate3d(0, 5px, 0);
+  transition: opacity 0.17s ease-in-out, transform 0.17s ease-in-out;
 }
 
 .hero {
@@ -645,6 +673,11 @@ body.is-hidden {
   line-height: 19px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+  transition: background 0.15s ease;
+}
+
+.no-touch .btn:hover {
+  background: #00f1c7;
 }
 
 .sm-services {
@@ -853,9 +886,9 @@ body.is-hidden {
 }
 
 .sm-info__title {
-  overflow: hidden;
+  display: table-cell;
+  width: 100%;
   max-width: 300px;
-  max-width: 160px;
 }
 
 .contact-us__inner {
@@ -1357,6 +1390,11 @@ body.is-hidden {
 
   .sm-info__icon .icon {
     font-size: 35px;
+  }
+
+  .sm-info__title {
+    display: block;
+    max-width: 160px;
   }
 
   .sm-info__description br {
