@@ -1,4 +1,5 @@
 .form
+	position: relative
 	&__row
 		margin: 0 -15px
 		+clr
@@ -32,3 +33,15 @@
 			right: 0
 			margin-top: -5px
 			font-size: 10px
+	&__hint
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		+sm 
+			position: relative
+			top: auto
+		.is-success
+			color: $green
+		.is-error
+			color: #de352e

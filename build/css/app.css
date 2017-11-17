@@ -1003,6 +1003,10 @@ body.is-hidden:before {
   opacity: 0.9;
 }
 
+.form {
+  position: relative;
+}
+
 .form__row {
   margin: 0 -15px;
 }
@@ -1050,6 +1054,21 @@ body.is-hidden:before {
   right: 0;
   margin-top: -5px;
   font-size: 10px;
+}
+
+.form__hint {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.form__hint .is-success {
+  color: #3effde;
+}
+
+.form__hint .is-error {
+  color: #de352e;
 }
 
 .field {
@@ -1853,6 +1872,11 @@ body.is-hidden:before {
   .form__submit {
     font-size: 12px;
     letter-spacing: 0.4px;
+  }
+
+  .form__hint {
+    position: relative;
+    top: auto;
   }
 
   .input {
