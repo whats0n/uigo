@@ -1,0 +1,69 @@
+.work
+	position: relative
+	padding: 302px 0 240px
+	height: 763px
+	width: 100%
+	font-size: 15px
+	line-height: 1.27
+	letter-spacing: 0 
+	+font-smoothing
+	background-position: 50% 50% 
+	background-size: cover
+	background-repeat: no-repeat
+	display: table
+	+lg
+		padding: 220px 0 190px
+		height: 563px
+	+md
+		padding: 160px 0 140px
+		height: 463px
+		font-size: 14px
+	+sm
+		padding: 140px 0
+		height: 400px
+		text-align: center
+	&:after,
+	&:before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		bottom: 0
+	&:before
+		width: 40%
+		opacity: 0.9
+		background-image: linear-gradient(269deg, rgba(0,0,0,0.00) 9%, #000000 100%)
+		+sm
+			display: none
+	&:after
+		right: 0
+		opacity: 0.2
+		background: rgba(32,38,44,1)
+		+sm
+			opacity: 0.6
+	&_right
+		padding: 305px 0 240px
+		&:before
+			left: auto
+			right: 0
+			background-image: linear-gradient(-269deg, rgba(0,0,0,0.00) 9%, #000000 100%)
+	&__inner
+		position: relative
+		z-index: 1
+		width: 100%
+		color: $white 
+	&__text
+		max-width: 368px
+		+sm
+			margin: 0 auto
+		.work_right &
+			float: right
+			max-width: 373px
+			+sm
+				float: none
+	&__title-sm
+		margin-bottom: 5px
+		text-transform: uppercase
+	&__title
+		margin-bottom: 20px
+		font-weight: 700 

@@ -35,11 +35,11 @@
 
 {% for work in works %}
 <!-- begin work -->
-<div class="work" style="background-image: url(img/{{ work.img }});">
+<div class="work {% if work.position %}work_{{ work.position }}{% endif %}" style="background-image: url(img/{{ work.img }});">
 	<div class="work__inner inner">
 		<div class="work__text">
-			<div class="work__type">{{ work.type }}</div>
-			<div class="work__title">{{ work.title }}</div>
+			<div class="work__title-sm title-sm">{{ work.type }}</div>
+			<h2 class="work__title title-lg">{{ work.title }}</h2>
 			<p>{{ work.text }}</p>
 		</div>
 	</div>
