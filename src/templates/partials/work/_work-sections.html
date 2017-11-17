@@ -1,42 +1,48 @@
 {% set works = [
 	{
 		img: "hero-1-crimen.jpg",
-		type: "",
-		title: "",
-		text: ""
+		type: "iOS & Android app",
+		title: "Alto al Crimen",
+		text: "Community Complaint and Citizen Alert system that allows users to connect with each other and with local authorities. The denunciations are anonymous and the orders of aid allow to visualize only to the authority and Stop to the Crime the telephone number and the mail."
 	},
 	{
 		position: "right",
 		img: "hero-2-truco.jpg",
-		type: "",
-		title: "",
-		text: ""
+		type: "iOS & Android app",
+		title: "Truco Uruguayo",
+		text: "iOS and Android version of the Uruguayan popular card's game. The denunciations are anonymous and the orders of aid allow to visualize only to the authority and Stop to the Crime the telephone number and the mail."
 	},
 	{
 		img: "hero-3.jpg",
-		type: "",
-		title: "",
-		text: ""
+		type: "iOS & Android app",
+		title: "GPSGay",
+		text: "Portal for dentists with content related to occlusion. It is possible to make in-app purchases of books, magazines and manuals in pdf format, and allows the visualization of these as well as make specific annotations in each document."
 	},
 	{
 		position: "right",
 		img: "hero-4-wohoo.jpg",
-		type: "",
-		title: "",
-		text: ""
+		type: "iOS app",
+		title: "Wohoo",
+		text: "iOS and Android version of the Uruguayan popular card's game. The denunciations are anonymous and the orders of aid allow to visualize only to the authority and Stop to the Crime the telephone number and the mail."
 	},
 	{
 		img: "hero-5-smart.jpg",
-		type: "",
-		title: "",
-		text: ""
+		type: "iOS & Android app",
+		title: "SmartWay",
+		text: "Portal for dentists with content related to occlusion. It is possible to make in-app purchases of books, magazines and manuals in pdf format, and allows the visualization of these as well as make specific annotations in each document."
 	}
 ] %}
 
+{% for work in works %}
 <!-- begin work -->
-<div class="work">
+<div class="work" style="background-image: url(img/{{ work.img }});">
 	<div class="work__inner inner">
-		<div class="work__text"></div>
+		<div class="work__text">
+			<div class="work__type">{{ work.type }}</div>
+			<div class="work__title">{{ work.title }}</div>
+			<p>{{ work.text }}</p>
+		</div>
 	</div>
 </div>
 <!--  end work -->
+{% endfor %}

@@ -1078,6 +1078,12 @@ body.is-hidden {
   border-bottom-color: currentColor;
 }
 
+.topic {
+  padding: 178px 0 110px;
+  color: #fff;
+  background-color: #20262c;
+}
+
 .footer {
   padding: 20px 0;
   color: #fff;
@@ -1207,6 +1213,10 @@ body.is-hidden {
 
   .sm-info__col {
     padding: 30px;
+  }
+
+  .topic {
+    padding: 120px 0 70px;
   }
 }
 
@@ -1460,6 +1470,10 @@ body.is-hidden {
     margin-right: 3px;
     top: 0;
     display: inline-block;
+  }
+
+  .topic {
+    padding: 100px 0 50px;
   }
 
   .footer {
