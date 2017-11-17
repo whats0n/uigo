@@ -12,6 +12,7 @@ import { WIN, BODY, FIXED, ACTIVE } from '../_constants';
   const setHeader = position => $header.css({
     '-webkit-transform': `translate3d(0,${position-100}%,0)`,
     'transform': `translate3d(0,${position-100}%,0)`
+    // 'margin-top': position*($header.outerHeight()/100)-$header.outerHeight()/100 + 'px'
   });
   
   const toggleHeader = () => {
