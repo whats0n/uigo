@@ -1,0 +1,43 @@
+{% set items = [
+	{
+		icon: 'ios',
+		title: '<strong>iOS</strong> Development',
+		description: 'We specialize in creating mobile solutions using latest iOS SDKs. We build apps using Swift and Objective-C. We are constantly concerned about keeping your mobile app updated and responding to the last mobile trends, in order to maintain its compatibility with the most recent devices and the latest models.'
+	},
+	{
+		icon: 'android',
+		title: '<strong>Android</strong> Development',
+		description: 'We have vast experience in delivering Android mobile apps that work with a variety of different hardware, devices and all its versions. We speak Android and our team of engineers are Java masters, staying abreast of latest Android versions, updates and releases by Google Play.'
+	},
+	{
+		icon: 'uxui',
+		title: '<strong>UX/UI</strong> Mobile Interface',
+		description: 'We are detail oriented and perfectionists, continuously following the latest trends on design and development. We look at every detail about user interaction to create engaging and addictive user experiences.'
+	},
+	{
+		icon: 'chart',
+		title: '<strong>Mobile App</strong> Marketing',
+		description: 'Our Mobile App Marketing services go from brand messaging and initial launch planning, to user acquisition and app store optimization. We know how to make your app a top result for key search terms. <br>Marketing is required, not optional!'
+	}
+] %}
+<!-- begin items -->
+<div class="items">
+	<div class="inner items__inner">
+		<div class="items__container">
+			{% for item in items %}
+				<div class="item items__col">
+					<div class="item__header">
+						<div class="item__icon">
+							{{mixins.icon(item.icon)}}
+						</div>
+						<h2 class="title-lg item__title">{{item.title | safe}}</h2>
+					</div>
+					<div class="description item__description">
+						<p>{{item.description | safe}}</p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- end items -->
