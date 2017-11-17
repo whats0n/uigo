@@ -164,9 +164,11 @@
 			border-bottom: 1px solid rgba(204, 204, 204, 0.5)
 			color: $dark
 			+f(10, 13px, 0.4)
-		+hover
-			color: $green
 		&.is-active
+			&:before
+				opacity: 1
+				+gpu
+		+hover
 			&:before
 				opacity: 1
 				+gpu

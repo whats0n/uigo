@@ -616,11 +616,12 @@ body.is-hidden {
   transition: color 0.25s ease-in-out;
 }
 
-.no-touch .nav__link:hover {
-  color: #3effde;
+.nav__link.is-active:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 
-.nav__link.is-active:before {
+.no-touch .nav__link:hover:before {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
@@ -885,7 +886,8 @@ body.is-hidden {
 }
 
 .sm-info__title {
-  overflow: hidden;
+  display: table-cell;
+  width: 100%;
   max-width: 300px;
 }
 
@@ -1391,6 +1393,7 @@ body.is-hidden {
   }
 
   .sm-info__title {
+    display: block;
     max-width: 160px;
   }
 
