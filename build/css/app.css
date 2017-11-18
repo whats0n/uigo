@@ -541,10 +541,6 @@ body.is-hidden:before {
   transform: scale(0.5);
 }
 
-.header.is-active .nav {
-  transform: translate3d(0, 0, 0);
-}
-
 .header__inner {
   position: relative;
   padding-top: 30px;
@@ -1686,6 +1682,10 @@ body.is-hidden:before {
     font-size: 12px;
   }
 
+  .header.is-active .nav {
+    transform: translate3d(100%, 0, 0);
+  }
+
   .header__inner {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -1714,12 +1714,12 @@ body.is-hidden:before {
     position: absolute;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 100%;
     padding: 60px 20px;
     width: 100vw;
     height: 100vh;
     background: #fff;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(0, 0, 0);
     transition: transform 0.4s ease-in-out;
   }
 
