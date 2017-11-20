@@ -1676,7 +1676,9 @@ body.is-hidden:before {
   }
 
   .description {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
   }
 
   .header.is-active .nav {
