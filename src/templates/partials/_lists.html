@@ -27,13 +27,11 @@
 		<h2 class="title-lg lists__title">Industries we serve</h2>
 		<div class="lists__content">
 			{% for list in lists %}
-			    <ul class="list lists__item">
-			    	{% for item in list %}
-			    		<li class="list__item">
-			    			<a href="#" class="list__link">{{item | safe}}</a>
-			    		</li>
-			    	{% endfor %}
-			    </ul>
+				<ul class="list lists__item">
+					{% for item in list %}
+						<li class="list__item">{{item | safe}}</li>
+					{% endfor %}
+				</ul>
 			{% endfor %}
 		</div>
 	</div>

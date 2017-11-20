@@ -1348,7 +1348,7 @@ body.is-hidden:before {
   width: 33.33%;
 }
 
-.list__link {
+.list__item {
   display: block;
   padding: 11px 0;
   color: #20262c;
@@ -1358,10 +1358,6 @@ body.is-hidden:before {
   letter-spacing: 2.1px;
   text-transform: uppercase;
   transition: color 0.3s;
-}
-
-.no-touch .list__link:hover {
-  color: #3effde;
 }
 
 .items {
@@ -1497,7 +1493,7 @@ body.is-hidden:before {
     height: 563px;
   }
 
-  .list__link {
+  .list__item {
     font-size: 13px;
   }
 }
@@ -1971,7 +1967,7 @@ body.is-hidden:before {
     width: 100%;
   }
 
-  .list__link {
+  .list__item {
     font-size: 12px;
   }
 
