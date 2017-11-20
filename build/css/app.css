@@ -555,7 +555,7 @@ body.is-hidden:before {
   border: 1px solid #3effde;
   border-radius: 29px;
   color: #3effde;
-  background: none;
+  background: transparent;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 13px;
   line-height: 16px;
