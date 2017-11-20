@@ -1,0 +1,37 @@
+.lists
+	text-align: center
+	&__inner
+		padding-top: 80px
+		padding-bottom: 80px
+		+md
+			padding-top: 50px
+			padding-bottom: 50px
+	&__title
+		margin-bottom: 50px
+		+sm 
+			margin-bottom: 30px
+	&__content
+		margin: 0 -15px
+		+clr
+	&__item
+		float: left
+		padding: 0 15px
+		width: 33.33%
+		+sm
+			width: 100%
+
+.list
+	&__link
+		display: block
+		padding: 11px 0
+		color: $dark
+		font-family: $montserrat
+		+f(14,1.2,2.1)
+		text-transform: uppercase
+		transition: color 0.3s
+		+lg
+			font-size: 13px
+		+sm 
+			font-size: 12px
+		+hover
+			color: $green

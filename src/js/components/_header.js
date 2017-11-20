@@ -66,8 +66,25 @@ import { SCROLL_WIDTH } from './_scrollWidth';
 
   };
 
+  const resetMenu = () => {
+    // CLEAR CSS FOR HEADER AND BODY 
+    BODY.css({
+      'paddingRight': 0,
+      'position': 'relative'
+    });
+    $header
+      .css('right', 0)
+      .removeClass(ACTIVE);
+
+    // SET SCROLL POSITION
+    HTMLBODY.scrollTop(positionTop);
+  };
+
   toggleHeader();
-  WIN.on('scroll', toggleHeader);
+  WIN.on({
+    'scroll': toggleHeader,
+    'resize': () => !window.matchMedia('(max-width: 767px)').matches && resetMenu()
+  });
   //END HEADER ON SCROLL
 
   //START SHOW NAV
@@ -95,19 +112,15 @@ import { SCROLL_WIDTH } from './_scrollWidth';
       positionTop = scrollTop;
     }
     else {
-      // CLEAR CSS FOR HEADER AND BODY 
-      BODY.css({
-        'paddingRight': 0,
-        'position': 'relative'
-      });
-      $header
-        .css('right', 0)
-        .removeClass(ACTIVE);
-
-      // SET SCROLL POSITION
-      HTMLBODY.scrollTop(positionTop);
+      resetMenu();
     }
   });
   //END SHOW NAV
+
+  const $contactUs = $('.js-contact-us');
+  $contactUs.on('click', e => {
+    e.preventDefault();
+    if ($header.hasClass(ACTIVE)) $navBtn.trigger('click');
+  });
 
 })();

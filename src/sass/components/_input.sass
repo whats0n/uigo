@@ -3,6 +3,7 @@
 	display: block
 	&.is-active
 		.field__label
+			opacity: 1
 			transform: translate3d(0,-130%,0)
 	&__label
 		position: absolute
@@ -10,9 +11,10 @@
 		left: 0
 		right: 0
 		color: $dark
+		opacity: 0.61
 		font-family: $lato
 		+f(13, normal, null, 400)
-		transition: transform 0.3s
+		transition: transform 0.3s, opacity 0.3s
 		pointer-events: none
 
 
@@ -28,7 +30,4 @@
 	+f(13, normal, null, 400)
 	+sm 
 		font-size: 12px
-	&::placeholder
-		color: $dark
-		opacity: 0.61
 

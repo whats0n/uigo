@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="24px" viewBox="0 0 29 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>chart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Thinkup-Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services---Desktop-HD-" transform="translate(-856.000000, -2018.000000)" fill="#FFFFFF">
+            <g id="Section4---Serv" transform="translate(0.000000, 1600.000000)">
+                <g id="servicesx4" transform="translate(135.000000, 100.000000)">
+                    <g id="Mobile-Marketing" transform="translate(700.000000, 294.000000)">
+                        <g id="service">
+                            <g id="Bullet">
+                                <g transform="translate(1.000000, 0.000000)">
+                                    <g id="icn-services-marketing" transform="translate(0.000000, 3.000000)">
+                                        <g id="chart" transform="translate(20.000000, 21.000000)">
+                                            <g transform="translate(0.500000, 0.500000)">
+                                                <path d="M1,0 L7,0 C7.55228475,-1.01453063e-16 8,0.44771525 8,1 L8,22 C8,22.5522847 7.55228475,23 7,23 L1,23 C0.44771525,23 6.76353751e-17,22.5522847 0,22 L0,1 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 L1,0 Z M2,2 C1.72385763,2 1.5,2.22385763 1.5,2.5 L1.5,20.5 C1.5,20.7761424 1.72385763,21 2,21 L2.5,21 C2.77614237,21 3,20.7761424 3,20.5 L3,2.5 C3,2.22385763 2.77614237,2 2.5,2 L2,2 Z" id="Combined-Shape"></path>
+                                                <path d="M11,7 L17,7 C17.5522847,7 18,7.44771525 18,8 L18,22 C18,22.5522847 17.5522847,23 17,23 L11,23 C10.4477153,23 10,22.5522847 10,22 L10,8 L10,8 C10,7.44771525 10.4477153,7 11,7 L11,7 Z M12,9 C11.7238576,9 11.5,9.22385763 11.5,9.5 L11.5,20.5 C11.5,20.7761424 11.7238576,21 12,21 L12.5,21 C12.7761424,21 13,20.7761424 13,20.5 L13,9.5 C13,9.22385763 12.7761424,9 12.5,9 L12,9 Z" id="Combined-Shape-Copy"></path>
+                                                <path d="M21,13 L27,13 C27.5522847,13 28,13.4477153 28,14 L28,22 C28,22.5522847 27.5522847,23 27,23 L21,23 C20.4477153,23 20,22.5522847 20,22 L20,14 L20,14 C20,13.4477153 20.4477153,13 21,13 L21,13 Z M22,15 C21.7238576,15 21.5,15.2238576 21.5,15.5 L21.5,20.5 C21.5,20.7761424 21.7238576,21 22,21 L22.5,21 C22.7761424,21 23,20.7761424 23,20.5 L23,15.5 C23,15.2238576 22.7761424,15 22.5,15 L22,15 Z" id="Combined-Shape-Copy-2"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

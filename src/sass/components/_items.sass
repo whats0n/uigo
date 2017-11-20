@@ -1,0 +1,59 @@
+.items
+	color: $white
+	background: $dark
+	&__inner
+		padding-top: 50px
+		padding-bottom: 50px
+	&__container
+		margin: 0 -115px
+		font-size: 0
+		+xl 
+			margin: 0 -50px
+		+md 
+			margin: 0 -20px
+		+xs
+			margin: 0
+	&__col
+		display: inline-block
+		vertical-align: top
+		padding: 50px 115px
+		width: 50%
+		+xl
+			padding: 50px
+		+md 
+			padding: 20px
+		+xs 
+			padding: 20px 0
+			width: 100%
+
+.item
+	&__header
+		margin-bottom: 25px
+		+clr
+	&__icon
+		float: left
+		margin: 4px 25px 4px 0
+		border: 1px solid $green
+		border-radius: 3px
+		width: 69px
+		height: 66px
+		+vertical
+		+sm
+			margin: 0 20px 0 0
+		.icon
+			display: inline-block
+			vertical-align: middle
+			&-ios
+				font-size: 29px
+			&-android
+				font-size: 31px
+			&-uxui
+				font-size: 25px
+			&-chart
+				font-size: 23px
+	&__title
+		display: table-cell
+		+sm 
+			padding: 6px 0
+		strong
+			display: block

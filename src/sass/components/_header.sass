@@ -49,7 +49,8 @@
 						opacity: 0
 						transform: scale(0.5)
 		.nav
-			+gpu
+			+sm
+				transform: translate3d(100%,0,0)
 	&__inner
 		position: relative
 		padding-top: 30px
@@ -140,12 +141,12 @@
 		position: absolute
 		z-index: 1
 		top: 0
-		left: 0
+		right: 100%
 		padding: 60px 20px
 		width: 100vw
 		height: 100vh
 		background: $white
-		transform: translate3d(-100%,0,0)
+		+gpu
 		transition: transform 0.4s ease-in-out
 	&__item
 		display: inline-block
@@ -173,7 +174,7 @@
 		+sm
 			display: block
 			padding: 24px 0 23px
-			// border-bottom: 1px solid rgba(204, 204, 204, 0.5)
+			border-bottom: 1px solid rgba(204, 204, 204, 0.5)
 			color: $dark
 			+f(10, 13px, 0.4)
 		&.is-active
@@ -195,4 +196,4 @@
 			transform: translate3d(0,5px,0)
 			transition: opacity 0.17s ease-in-out, transform 0.17s ease-in-out
 			+sm 
-				bottom: 0
+				bottom: -1px

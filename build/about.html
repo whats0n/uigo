@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Index page</title>
+    <title>About</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -23,7 +23,7 @@
 			
 <svg class="icon icon-logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
 
-		</a> <button class="header__btn" data-goto="contact-us">Contact Us</button>
+		</a> <button class="header__btn js-contact-us" data-goto="contact-us">Contact Us</button>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item"> <a href="#" class="nav__link ">Work</a> </li>
@@ -107,6 +107,10 @@
                 <div class="form__footer"> <button class="form__submit">Send
 <svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
 </button> </div>
+                <div class="form__hint">
+                  <div class="is-success">Your Message has been sent. We'll get back to you soon :)</div>
+                  <div class="is-error">Oops! Something went wrong and we couldn't send your message :(</div>
+                </div>
               </form>
             </div>
           </div>
