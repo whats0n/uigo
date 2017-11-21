@@ -10,39 +10,42 @@
 		img: "hero-2-truco.jpg",
 		type: "iOS & Android app",
 		title: "Truco Uruguayo",
-		text: "iOS and Android version of the Uruguayan popular card's game. The denunciations are anonymous and the orders of aid allow to visualize only to the authority and Stop to the Crime the telephone number and the mail."
+		text: "iOS and Android version of the Uruguayan popular card's game."
 	},
 	{
 		img: "hero-3.jpg",
 		type: "iOS & Android app",
 		title: "GPSGay",
-		text: "Portal for dentists with content related to occlusion. It is possible to make in-app purchases of books, magazines and manuals in pdf format, and allows the visualization of these as well as make specific annotations in each document."
+		text: "Social network for the LGBT Community. The app include features like: Nearby users and places finder, Private messages, Chat, Movies, News and articles, Events and parties and much more."
 	},
 	{
 		position: "right",
 		img: "hero-4-wohoo.jpg",
 		type: "iOS app",
-		title: "Wohoo",
-		text: "iOS and Android version of the Uruguayan popular card's game. The denunciations are anonymous and the orders of aid allow to visualize only to the authority and Stop to the Crime the telephone number and the mail."
+		title: "Woohoo",
+		text: "Through the app it is possible to buy / order beverages and drinks at a certain bar or pub from a list of bars and pubs, and then go to consume them at the selected place. Proof of concept."
 	},
 	{
 		img: "hero-5-smart.jpg",
 		type: "iOS & Android app",
-		title: "SmartWay",
-		text: "Portal for dentists with content related to occlusion. It is possible to make in-app purchases of books, magazines and manuals in pdf format, and allows the visualization of these as well as make specific annotations in each document."
+		title: "Smartway",
+		text: "Smartway offers its customers the possibility to access, remotely and in real time, the key indicators of their vehicles and machinery with communication with the on-board computer (ECU); allowing them to increase production, as well as reduce operation and maintenance costs.",
+		hide: true
 	}
 ] %}
 
 {% for work in works %}
-<!-- begin work -->
-<div class="work {% if work.position %}work_{{ work.position }}{% endif %}" style="background-image: url(img/{{ work.img }});">
-	<div class="work__inner inner">
-		<div class="work__text">
-			<div class="work__title-sm title-sm">{{ work.type }}</div>
-			<h2 class="work__title title-lg">{{ work.title }}</h2>
-			<p>{{ work.text }}</p>
+	{% if not work.hide %}
+		<!-- begin work -->
+		<div class="work {% if work.position %}work_{{ work.position }}{% endif %}" style="background-image: url(img/{{ work.img }});">
+			<div class="work__inner inner">
+				<div class="work__text">
+					<div class="work__title-sm title-sm">{{ work.type }}</div>
+					<h2 class="work__title title-lg">{{ work.title }}</h2>
+					<p>{{ work.text }}</p>
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
-<!--  end work -->
+		<!--  end work -->
+	{% endif %}
 {% endfor %}
