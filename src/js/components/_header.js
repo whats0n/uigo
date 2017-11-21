@@ -1,4 +1,4 @@
-import { WIN, BODY, HTMLBODY, FIXED, ACTIVE } from '../_constants';
+import { WIN, BODY, HTMLBODY, FIXED, ACTIVE, widthSM } from '../_constants';
 import { SCROLL_WIDTH } from './_scrollWidth';
 
 ;(() => {
@@ -16,7 +16,6 @@ import { SCROLL_WIDTH } from './_scrollWidth';
   const setHeader = position => $headerInner.css({
     '-webkit-transform': `translate3d(0,${position-100}%,0)`,
     'transform': `translate3d(0,${position-100}%,0)`
-    // 'margin-top': position*($header.outerHeight()/100)-$header.outerHeight()/100 + 'px'
   });
   
   const toggleHeader = () => {
@@ -25,6 +24,8 @@ import { SCROLL_WIDTH } from './_scrollWidth';
     const distance = $header.outerHeight() * 2;
     const conditionDistance = scrollTop > distance;
 
+    if (window.matchMedia(`(max-width: ${widthSM}px)`).matches && $header.hasClass(ACTIVE)) return;
+    
     if (conditionDistance && !shown) {
       shown = true;
       $headerInner.css({
